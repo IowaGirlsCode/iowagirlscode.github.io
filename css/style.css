@@ -1,6 +1,24 @@
+/* Mixin */
 #container-iowa-girls-code {
+  background-image: url("../img/iowagirlscodecampbackground.jpeg");
+  background-size: cover;
+  height: 100vh;
   margin: 0;
+  max-width: 100%;
   width: 100%; }
+  #container-iowa-girls-code .section {
+    /* Gradient effect */
+    animation: move 3s ease infinite;
+    transform: translate3d(0, 0, 0);
+    background: linear-gradient(45deg, rgba(236, 121, 164, 0.7) 10%, rgba(255, 156, 101, 0.7) 90%);
+    height: inherit;
+    padding: 0; }
+    #container-iowa-girls-code .section .row {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
 
 p {
   line-height: 2rem; }
