@@ -33,6 +33,36 @@ $theme-orange-opacite: rgba(255, 156, 101, .7);
   }
 }
 
+/*programs panel*/
+#programs-container{
+  height: 100vh;
+  width: 100%;
+  
+  .section{
+    height: inherit;
+
+    .row {
+      height: 50vh;
+
+      .col {
+        height: inherit;
+      }
+    }
+  }
+}
+
+#dsm {
+  background-image: url("../img/dsm.jpeg");
+}
+
+#cr {
+  background-image: url("../img/cr.jpeg");
+}
+
+#igcc{
+  background-image: url("../img/iowagirlscodecampbackground.jpeg");
+}
+
 
 p {
   line-height: 2rem;
