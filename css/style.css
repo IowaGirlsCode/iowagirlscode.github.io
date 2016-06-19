@@ -1,4 +1,7 @@
 /* Mixin */
+.container {
+  max-width: 100% !important; }
+
 #container-iowa-girls-code {
   background-image: url("../img/iowagirlscodecampbackground.jpeg");
   background-size: cover;

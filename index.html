@@ -8,6 +8,8 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/card-panel.css"> <!-- Resource style -->
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
@@ -42,29 +44,37 @@
   </div>
 
   <div class="container" id="programs-container">
-    <h4 class="center">Programs</h4>
-    <div class="section">
+    <ul class="cd-gallery">
+      <li class="cd-item">
+        <a>
+          <div>
+            <h2>Des Moines</h2>
+            <p>Learn with students and mentors from tech companies local to Des Moines!</p>
+            <b>Register for the DSM Kick-off!</b>
+          </div>
+        </a>
+      </li>
 
-      <div class="row">
+      <li class="cd-item">
+        <a>
+          <div>
+            <h2>Cedar Rapids</h2>
+            <p>Learn with students and mentors from tech companies local to Cedar Rapids!</p>
+            <b>Register for the CR Kick-off!</b>
+          </div>
+        </a>
+      </li>
 
-        <div id="dsm" class="col s12 l6 center">
-          DSM
-        </div>
-        <div id="cr" class="col s12 l6 center">
-          CR
-        </div>
-
-      </div>
-
-      <div class="row">
-
-        <div id="igcc" class="col s12 center">
-          IGCC
-        </div>
-
-      </div>
-
-    </div>
+      <li class="cd-item">
+        <a>
+          <div>
+            <h2>Iowa Girls Code Camp</h2>
+            <p>Day long coding workshops for all ages!</p>
+            <b>Learn More</b>
+          </div>
+        </a>
+      </li>
+    </ul> <!-- .cd-gallery -->
   </div>
 
   <div class="container">
@@ -137,6 +147,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
   </body>
 </html>
