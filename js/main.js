@@ -2,6 +2,12 @@ jQuery(document).ready(function($){
 	var timelineBlocks = $('.cd-timeline-block'),
 		offset = 0.8;
 
+	$('.slider').slider({
+		indicators: false,
+		height: 500,
+		interval: 3000
+	});
+
 	//hide timeline blocks which are outside the viewport
 	hideBlocks(timelineBlocks, offset);
 
