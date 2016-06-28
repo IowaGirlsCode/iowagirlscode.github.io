@@ -1,0 +1,143 @@
+$theme-pink: rgba(236, 121, 164, 1);
+$theme-orange: rgba(255, 156, 101, 1);
+$theme-purple: rgb(193, 91, 218);
+$theme-pink-opacite: rgba(236, 121, 164, .7);
+$theme-orange-opacite: rgba(255, 156, 101, .7);
+
+/* Mixins */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin text-shadow() {
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+
+.container {
+  max-width: 100% !important;
+}
+
+
+#container-iowa-girls-code {
+  background-image: url("../img/iowagirlscodecampbackground.jpeg");
+  background-size: cover;
+  height : 100vh;
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+
+  .section {
+    /* Gradient effect */
+    animation: move 3s ease infinite;
+    transform: translate3d(0, 0, 0);
+    background: linear-gradient(45deg, $theme-pink-opacite 10%, $theme-orange-opacite 90%);
+
+    height: inherit;
+    padding: 0;
+
+    .row {
+       @include vertical-align();
+       max-width: 100%;
+    }
+  }
+}
+
+/* Timeline styles */
+
+#timeline-container {
+  width: 100%;
+}
+
+
+#partner-button {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: $theme-pink;
+}
+
+
+.cd-timeline-img.code{
+  background: $theme-pink;
+}
+
+.cd-timeline-img.girl {
+  background: $theme-orange;
+}
+
+.cd-timeline-img.prize{
+  background: $theme-purple;
+}
+
+/*programs panel*/
+
+#programs-container{
+  height: 100vh;
+  width: 100%;
+
+  ul {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #dsm-cd-item {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/iowastate.jpg");
+  }
+
+  #cr-cd-item {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/cr.jpg");
+  }
+
+  #igcc-cd-item {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/igcc.jpg");
+  }
+
+  #cr-cd-item, #dsm-cd-item, #igcc-cd-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  h2, p, b {
+     @include text-shadow(); 
+  }
+
+  .section{
+    height: inherit;
+
+    .row {
+      height: 50vh;
+
+      .col {
+        height: inherit;
+      }
+    }
+  }
+}
+
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+
+/* Partners */
+
+#parnters-row {
+  margin: 5%;
+}
+
+/* Footer - contact */
+footer {
+  background-color: $theme-pink !important;
+}
+
+footer.page-footer {
+  margin: 0;
+}
