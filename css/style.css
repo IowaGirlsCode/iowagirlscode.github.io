@@ -33,39 +33,44 @@
   margin-bottom: 5%;
   background-color: #ec79a4; }
 
-.cd-timeline-img.code {
+.cd-timeline-img.code, #programs-button {
   background: #ec79a4; }
 
-.cd-timeline-img.girl {
+.cd-timeline-img.girl, #partners-button {
   background: #ff9c65; }
 
 .cd-timeline-img.prize {
   background: #c15bda; }
 
+a.cd-read-more {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem !important; }
+
 /*programs panel*/
-#programs-container {
+#programs {
   height: 100vh;
   width: 100%; }
-  #programs-container ul {
+  #programs ul {
     height: 100%;
     margin: 0; }
-  #programs-container #dsm-cd-item {
+  #programs #dsm-cd-item {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/iowastate.jpg"); }
-  #programs-container #cr-cd-item {
+  #programs #cr-cd-item {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cr.jpg"); }
-  #programs-container #igcc-cd-item {
+  #programs #igcc-cd-item {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/igcc.jpg");
     width: 100% !important; }
-  #programs-container #cr-cd-item, #programs-container #dsm-cd-item, #programs-container #igcc-cd-item {
+  #programs #cr-cd-item, #programs #dsm-cd-item, #programs #igcc-cd-item {
     background-repeat: no-repeat;
     background-size: cover; }
-  #programs-container h2, #programs-container p, #programs-container b {
+  #programs h2, #programs p, #programs b {
     text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2); }
-  #programs-container .section {
+  #programs .section {
     height: inherit; }
-    #programs-container .section .row {
+    #programs .section .row {
       height: 50vh; }
-      #programs-container .section .row .col {
+      #programs .section .row .col {
         height: inherit; }
 
 p {

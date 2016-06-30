@@ -60,11 +60,11 @@ $theme-orange-opacite: rgba(255, 156, 101, .7);
 }
 
 
-.cd-timeline-img.code{
+.cd-timeline-img.code, #programs-button{
   background: $theme-pink;
 }
 
-.cd-timeline-img.girl {
+.cd-timeline-img.girl, #partners-button {
   background: $theme-orange;
 }
 
@@ -72,9 +72,15 @@ $theme-orange-opacite: rgba(255, 156, 101, .7);
   background: $theme-purple;
 }
 
+a.cd-read-more {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem !important;
+}
+
 /*programs panel*/
 
-#programs-container{
+#programs{
   height: 100vh;
   width: 100%;
 
