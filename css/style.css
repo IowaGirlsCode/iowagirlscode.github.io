@@ -54,7 +54,8 @@
   #programs-container #cr-cd-item {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cr.jpg"); }
   #programs-container #igcc-cd-item {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/igcc.jpg"); }
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/igcc.jpg");
+    width: 100% !important; }
   #programs-container #cr-cd-item, #programs-container #dsm-cd-item, #programs-container #igcc-cd-item {
     background-repeat: no-repeat;
     background-size: cover; }
@@ -72,6 +73,10 @@ p {
 
 .button-collapse {
   color: #26a69a; }
+
+/* Partners */
+#parnters-row {
+  margin: 5%; }
 
 /* Footer - contact */
 footer {

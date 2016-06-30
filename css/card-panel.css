@@ -37,6 +37,34 @@ Main content
   -moz-transition: -moz-transform 0.5s 0s;
   transition: transform 0.5s 0s;
 }
+
+@media only screen and (max-width: 600px) {
+
+    /* IGC Logo */
+    #container-iowa-girls-code > div > div {
+      margin: 0;
+    }
+
+    /* Title */
+    li.cd-item > a > div > h2  {
+        margin: 2%;
+      }
+
+    #igcc-cd-item > a > div > h2 {
+      font-size: 2rem;
+    }
+
+    /* Text on card */
+    li.cd-item> a > div > p {
+        margin: 0;
+    }
+
+    /* Register button */
+    li.cd-item> a > div > b{
+        font-size: 1rem;
+    }
+}
+
 @media only screen and (min-width: 600px) {
   .cd-main.fold-is-open > * {
     -webkit-transform: translateX(600px);
@@ -125,19 +153,6 @@ Main content
 .cd-item div {
   display: table-cell;
   vertical-align: middle;
-}
-.cd-item:nth-of-type(1) {
-  background-color: #363558;
-}
-.cd-item:nth-of-type(2) {
-  background-color: #544173;
-}
-.cd-item:nth-of-type(3) {
-  background-color: #dadcdc;
-  width: 100%;
-}
-.cd-item:nth-of-type(4) {
-  background-color: #65d29b;
 }
 .cd-item h2 {
   font-size: 2.2rem;

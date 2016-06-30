@@ -52,6 +52,7 @@ $theme-orange-opacite: rgba(255, 156, 101, .7);
   width: 100%;
 }
 
+
 #partner-button {
   margin-top: 5%;
   margin-bottom: 5%;
@@ -89,10 +90,12 @@ $theme-orange-opacite: rgba(255, 156, 101, .7);
   #cr-cd-item {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/cr.jpg");
   }
-
+  
   #igcc-cd-item {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/igcc.jpg");
+    width: 100% !important; 
   }
+
 
   #cr-cd-item, #dsm-cd-item, #igcc-cd-item {
     background-repeat: no-repeat;
@@ -123,6 +126,13 @@ p {
 
 .button-collapse {
   color: #26a69a;
+}
+
+
+/* Partners */
+
+#parnters-row {
+  margin: 5%;
 }
 
 /* Footer - contact */
