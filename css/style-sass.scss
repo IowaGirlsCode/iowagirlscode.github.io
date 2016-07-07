@@ -96,14 +96,8 @@ a.cd-read-more {
   #cr-cd-item {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/cr.jpg");
   }
-  
-  #igcc-cd-item {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/igcc.jpg");
-    width: 100% !important; 
-  }
 
-
-  #cr-cd-item, #dsm-cd-item, #igcc-cd-item {
+  #cr-cd-item, #dsm-cd-item {
     background-repeat: no-repeat;
     background-size: cover;
   }
