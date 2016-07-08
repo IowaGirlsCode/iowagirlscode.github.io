@@ -27,9 +27,22 @@ nav {
   background-color: initial;
   bottom: 0;
   box-shadow: none;
-  padding-left: 5%;
-  padding-right: 5%;
+  height: 10%;
   position: absolute;
+
+  div {
+    ul {
+        display: inline-block;
+        height: inherit;
+        position: relative;
+        width: 100%;
+
+        li {
+          height: inherit;
+          width: calc(100% /3);
+        }
+    }
+  }
 }
 
 #container-iowa-girls-code {
