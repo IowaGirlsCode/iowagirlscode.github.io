@@ -2,6 +2,15 @@
 .container {
   max-width: 100% !important; }
 
+/* Nav bar */
+nav {
+  background-color: initial;
+  bottom: 0;
+  box-shadow: none;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: absolute; }
+
 #container-iowa-girls-code {
   background-image: url("../img/iowagirlscodecampbackground.jpeg");
   background-size: cover;

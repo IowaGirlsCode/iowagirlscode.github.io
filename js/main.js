@@ -8,6 +8,8 @@ jQuery(document).ready(function($){
 		interval: 3000
 	});
 
+	$(".dropdown-button").dropdown();
+
 	//hide timeline blocks which are outside the viewport
 	hideBlocks(timelineBlocks, offset);
 
