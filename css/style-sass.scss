@@ -17,6 +17,29 @@ $theme-orange-opacite: rgba(255, 156, 101, .7);
   text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
+@mixin serif-font() {
+  font-family: 'Abril Fatface', cursive;
+ }
+
+
+@mixin sans-serif-font() {
+  font-family: 'Lato', sans-serif;
+ }
+
+body {
+  @include sans-serif-font();
+}
+
+h1, h2 {
+  @include serif-font();
+  color: black;
+}
+
+
+p {
+  line-height: 2rem;
+}
+
 .container {
   max-width: 100% !important;
 }
@@ -131,8 +154,9 @@ a.cd-read-more {
     background-size: cover;
   }
 
-  h2, p, b {
+  h1, p, b {
      @include text-shadow(); 
+     color: white;
   }
 
   .section{
@@ -148,10 +172,6 @@ a.cd-read-more {
   }
 }
 
-
-p {
-  line-height: 2rem;
-}
 
 .button-collapse {
   color: #26a69a;

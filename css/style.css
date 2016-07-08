@@ -1,4 +1,14 @@
 /* Mixins */
+body {
+  font-family: 'Lato', sans-serif; }
+
+h1, h2 {
+  font-family: 'Abril Fatface', cursive;
+  color: black; }
+
+p {
+  line-height: 2rem; }
+
 .container {
   max-width: 100% !important; }
 
@@ -81,17 +91,15 @@ a.cd-read-more {
   #programs #cr-cd-item, #programs #dsm-cd-item {
     background-repeat: no-repeat;
     background-size: cover; }
-  #programs h2, #programs p, #programs b {
-    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2); }
+  #programs h1, #programs p, #programs b {
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    color: white; }
   #programs .section {
     height: inherit; }
     #programs .section .row {
       height: 50vh; }
       #programs .section .row .col {
         height: inherit; }
-
-p {
-  line-height: 2rem; }
 
 .button-collapse {
   color: #26a69a; }
