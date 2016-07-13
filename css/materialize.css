@@ -3446,11 +3446,6 @@ input[type=range] + .thumb {
   }
 }
 
-.container .row {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
-}
-
 .section {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -6672,7 +6667,7 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav a {
   color: #444;
   display: block;
-  font-size: 1rem;
+  font-size: 1.25rem;
   height: 64px;
   line-height: 64px;
   padding: 0 30px;

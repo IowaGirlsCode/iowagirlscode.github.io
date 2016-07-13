@@ -2,164 +2,192 @@
 <html lang="en" class="no-js">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/timeline.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Medula+One|Lato" rel="stylesheet">
- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
- <link rel="stylesheet" href="css/card-panel.css"> <!-- Resource style -->
- <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="css/timeline.css" media="screen,projection">
+  <link rel="stylesheet" href="css/card-panel.css" media="screen,projection">
 
- <title>Iowa Girls Code</title>
+  <title>Iowa Girls Code</title>
 </head>
 <body>
-  <div class="container" id="container-iowa-girls-code">
-    <div class="section">
-      <div class="row">
-        <div class="col s12 center">
-          <img class="responsive-img" src="img/logo_white_large.png" />
-        </div>
+  <header>
+
+    <nav class="top-nav hide-on-large-only">
+      <div class="container">
+        <div class="nav-wrapper"><a class="page-title">Iowa Girls Code</a></div>
       </div>
-      <nav class="hide-on-small-and-down">
-        <div class="nav-wrapper">
-          <ul class="center">
-            <li><a href="#timeline-container">Timeline</a></li>
-            <li><a href="#partners">Partners</a></li>
-            <li><a href="#programs">Locations</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>    
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h1>What is Iowa Girls Code?</h1>
-          <h5>In <a href="cbs2iowa.com/news/local/iowa-girls-code-camp-teaches-young-women-about-computer-science">February 2016</a>, we founded the first ever coding camp for high school girls in Iowa. The one-day event was a successful start, and now it's time to bring Silicon Valley level tech education to Silicon Prairie.</h5>
-          <h5><b>Iowa Girls Code</b> is a program that matches high school girls with mentors at local tech companies and teaches the basics of computer science and app development.</h5>
-        </div>
-      </div>
-
+    </nav>
+    <div class="container hide-on-large-only">
+      <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
+        <i class="material-icons">menu</i>
+      </a>
     </div>
-  </div>
 
-  <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="img/igc1.jpg">
-      </li>
-      <li>
-        <img src="img/igc2.jpg">
-      </li>
-      <li>
-        <img src="img/igc3.jpg">
-      </li>
-      <li>
-        <img src="img/igc4.jpg">
-      </li>
-      <li>
-        <img src="img/igc5.jpg">
-      </li>      
-      <li>
-        <img src="img/igc6.jpg">
-      </li>
+    <ul id="nav-mobile" class="side-nav fixed">
+      <div id="links-container">
+        <li>
+          <img class="tooltipped" data-position="top" data-delay="50" data-tooltip="Is this heaven? No, it's Iowa." id="iowa-img" src="img/iowa.png" />
+        </li>
+        <li class="bold">
+          <a href="#about" class="waves-effect waves-teal">About</a>
+        </li>
+        <li class="bold">
+          <a href="#timeline" class="waves-effect waves-teal">Program Outline</a>
+        </li>
+        <li class="bold">
+          <a href="#mentors" class="waves-effect waves-teal">Mentors</a>
+        </li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Locations</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#dsm">Des Moines Area</a></li>
+                  <li><a href="#cr">Cedar Rapids Area</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Partners</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#Rockwell">Rockwell Collins</a></li>
+                  <li><a href="#IowaState">Iowa State University</a></li>
+                  <li><a href="#Workiva">Workiva</a></li>
+                  <li><a href="#Visionary">Visionary Services</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="bold">
+          <a href="#contact" class="waves-effect waves-teal">Contact</a>
+        </li>
+      </div>
     </ul>
-  </div>
+  </header>
+  <main>
+    <div class="container" id="container-iowa-girls-code">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 center">
+            <img class="responsive-img" src="img/logo_white_large.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="about">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 center">
+            <h1>What is Iowa Girls Code?</h1>
+            <h5>In February 2016, we founded the first ever coding camp for high school girls in Iowa.</h5> 
+            <h5>The one-day event was a successful start, and now it's time to bring Silicon Valley level tech education to Silicon Prairie.</h5>
+
+            <div class="hide-on-small-only">
+            <iframe width="640" height="360" frameborder="0" marginheight="0" marginwidth="0" src="http://cbs2iowa.com/embed/news/local/iowa-girls-code-camp-teaches-young-women-about-computer-science" ></iframe>
+            </div>
+
+            <h5><b>Iowa Girls Code</b> is a program that matches high school girls with mentors at local universities and tech companies and teaches the basics of computer science and app development.</h5>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/igc1.jpg">
+        </li>
+        <li>
+          <img src="img/igc2.jpg">
+        </li>
+        <li>
+          <img src="img/igc3.jpg">
+        </li>
+        <li>
+          <img src="img/igc4.jpg">
+        </li>
+        <li>
+          <img src="img/igc5.jpg">
+        </li>      
+        <li>
+          <img src="img/igc6.jpg">
+        </li>
+      </ul>
+    </div>
 
-  <div class="container" id="timeline-container">
-    <h1 class="center">Program Timeline</h1>
-    <section id="cd-timeline" class="cd-container">
+    <div class="container" id="timeline">
+      <h1 class="center">Program Timeline</h1>
+      <section id="cd-timeline" class="cd-container">
+        <div class="cd-timeline-block">
+         <div class="cd-timeline-img code">
+          <img src="img/code-icon.svg">
+        </div> <!-- cd-timeline-img -->
+
+        <div class="cd-timeline-content z-depth-3 hoverable">
+          <h2>Fall Kickoff</h2>
+          <p>
+            See what Iowa Girls Code is all about at our
+            Fall Kickoff event! 
+          </p>
+          <p>
+            Be matched with a team of fellow female coders and a mentor from a local company, watch cool tech talks & demos, and attend workshops!
+          </p>
+          <a href="#programs" id="programs-button" class="cd-read-more z-depth-1">Program Locations</a>
+          <span class="cd-date">Sept 24th</span>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+
       <div class="cd-timeline-block">
-       <div class="cd-timeline-img code">
-        <img src="img/code-icon.svg">
+       <div class="cd-timeline-img girl">
+        <img src="img/girl.svg">
       </div> <!-- cd-timeline-img -->
 
       <div class="cd-timeline-content z-depth-3 hoverable">
-        <h2>Fall Kickoff</h2>
+        <h2>Mentor Meetups</h2>
         <p>
-          See what Iowa Girls Code is all about at our
-          Fall Kickoff event! 
+          Your team will meet bi-monthly to build an app or website, learn about a future career in Computer Science, and do Silicon Prairie tech tours!
         </p>
-        <p>
-          Be matched with a team of fellow female coders and a mentor from a local company, watch cool tech talks & demos, and attend workshops!
-        </p>
-        <a href="#programs" id="programs-button" class="cd-read-more z-depth-1">Program Locations</a>
-        <span class="cd-date">Sept 24th</span>
+        <a href="#partners" id="partners-button" class="cd-read-more z-depth-1">IGC Partner Companies</a>
+        <span class="cd-date">Bi-monthly</span>
       </div> <!-- cd-timeline-content -->
     </div> <!-- cd-timeline-block -->
 
     <div class="cd-timeline-block">
-     <div class="cd-timeline-img girl">
-      <img src="img/girl.svg">
+     <div class="cd-timeline-img prize">
+      <img src="img/prize.svg">
     </div> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content z-depth-3 hoverable">
-      <h2>Mentor Meetups</h2>
+      <h2>Spring Summit</h2>
       <p>
-        Your team and mentor will meet bi-monthly to build an app or website, learn about a future career in Computer Science, and do Silicon Prairie tech tours!
+        You've spent the past few months building an awesome app or website with your awesome team, and now it's time to present!
       </p>
-      <a href="#partners" id="partners-button" class="cd-read-more z-depth-1">IGC Partner Companies</a>
-      <span class="cd-date">Bi-monthly</span>
+      <p>
+        Demo your work in front of students, tech professionals, and a panel of judges to compete for prizes!
+      </p>
+      <span class="cd-date">March 2016</span>
     </div> <!-- cd-timeline-content -->
   </div> <!-- cd-timeline-block -->
-
-  <div class="cd-timeline-block">
-   <div class="cd-timeline-img prize">
-    <img src="img/prize.svg">
-  </div> <!-- cd-timeline-img -->
-
-  <div class="cd-timeline-content z-depth-3 hoverable">
-    <h2>Spring Summit</h2>
-    <p>
-      You've spent the past few months building an awesome app or website with your awesome team, and now it's time to present!
-    </p>
-    <p>
-      Demo your work in front of students, tech professionals, and a panel of judges to compete for prizes!
-    </p>
-    <span class="cd-date">March 2016</span>
-  </div> <!-- cd-timeline-content -->
-</div> <!-- cd-timeline-block -->
 </section> <!-- cd-timeline -->
 </div>
 
-<div class="container center" id="faq">
-  <h1>FAQ</h1>
-  <div class="row">
-    <div class="col s12 l6">
-      <h3>Who can participate in Iowa Girls Code?</h3>
-      <h5>Any high school girl living in Iowa!</h5>
-    </div>
-    <div class="col s12 l6">
-      <h3>Do I need prior coding experience?</h3>
-      <h5>Nope! The Iowa Girls Code program is designed to transform total beginners into accomplished app developers.</h5>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s12 l6">
-      <h3>Is it free?</h3>
-      <h5>Oh yes! We want Computer Science education to be accessible to everyone.</h5>
-    </div>
-    <div class="col s12 l6">
-      <h3>What is a "mentor?"? How can I become one?</h3>
-      <h5>Mentors are young professionals in tech who are passionate about teaching. Most come from our <a href="#partners">partner companies</a></h5>
-    </div>
-  </div>
-</div>
-
-<div class="container" id="programs">
+<div class="container" id="locations">
   <ul class="cd-gallery">
-    <li class="cd-item" id="dsm-cd-item">
+    <li class="cd-item" id="dsm">
       <a>
         <div>
           <h1>Des Moines Area</h1>
@@ -169,7 +197,7 @@
       </a>
     </li>
 
-    <li class="cd-item" id="cr-cd-item">
+    <li class="cd-item" id="cr">
       <a>
         <div>
           <h1>Cedar Rapids Area</h1>
@@ -188,26 +216,72 @@
       <h1>Partners</h1>
       <h4>These Iowa-based companies and organizations make Iowa Girls Code possible by providing mentors and sponsorship!</h4>
       <div class="row" id="parnters-row">
-        <div class="col s12">
-          <a href="https://www.rockwellcollins.com/">
-            <img class="responsive-img" src="img/rockwell-logo.png"/>
-          </a>
+
+        <div class="row">
+          <div class="col s12">
+            <div class="card" id="Rockwell">
+              <div class="card-image">
+                <img src="img/rockwell-logo.png">
+              </div>
+              <div class="card-content">
+                <p>About RC</p>
+              </div>
+              <div class="card-action">
+                <a href="https://www.rockwellcollins.com/">More info</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col s12">
-          <a href="https://www.wise.iastate.edu/aboutpwse.html">
-            <img class="responsive-img" src="img/isu-logo.png"/>
-          </a>
+
+
+        <div class="row">
+          <div class="col s12">
+            <div class="card" id="IowaState">
+              <div class="card-image">
+                <img src="img/isu-logo.png">
+              </div>
+              <div class="card-content">
+                <p>About ISU</p>
+              </div>
+              <div class="card-action">
+                <a href="https://www.wise.iastate.edu/aboutpwse.html">More info</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <a href="https://www.workiva.com/">
-            <img class="responsive-img" src="img/Workiva-Logo.png"/>
-          </a>
+
+        <div class="row">
+          <div class="col s12">
+            <div class="card" id="Workiva">
+              <div class="card-image">
+                <img src="img/Workiva-Logo.png">
+              </div>
+              <div class="card-content">
+                <p>About Workiva</p>
+              </div>
+              <div class="card-action">
+                <a href="https://www.workiva.com/">More info</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <a href="https://www.visionary.com/">
-            <img class="responsive-img" src="img/vsi-logo.png"/>
-          </a>
+
+        <div class="row">
+          <div class="col s12">
+            <div class="card" id="Visionary">
+              <div class="card-image">
+                <img src="img/vsi-logo.png">
+              </div>
+              <div class="card-content">
+                <p>About Workiva</p>
+              </div>
+              <div class="card-action">
+                <a href="https://www.visionary.com/">More info</a>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
 
       <div class="col s12">
@@ -215,26 +289,25 @@
       </div>
     </div>
 
-  </div>
-</div>
+  </main>
 
-<footer class="page-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Contact</h5>
-        <p class="grey-text text-lighten-4">Questions? Contact the Iowa Girls Code <a href="mailto:kelseyhrubes@gmail.com">Program Director</a></p>
+  <footer class="page-footer" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Contact</h5>
+          <p class="grey-text text-lighten-4">Questions? Contact the Iowa Girls Code <a href="mailto:kelseyhrubes@gmail.com">Program Director</a></p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="footer-copyright">
-  </div>
-</footer>
+    <div class="footer-copyright">
+    </div>
+  </footer>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
-<!-- esdf -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
+  <!-- esdf -->
 </body>
 </html>

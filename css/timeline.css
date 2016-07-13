@@ -21,7 +21,7 @@ body {
 }
 
 a {
-  color: #acb7c0;
+  color: #0089ec;
   text-decoration: none;
 }
 
@@ -46,33 +46,6 @@ Modules - reusable parts of our design
   content: '';
   display: table;
   clear: both;
-}
-
-/* -------------------------------- 
-
-Main components 
-
--------------------------------- */
-header {
-  height: 200px;
-  line-height: 200px;
-  text-align: center;
-  background: #303e49;
-}
-header h1 {
-  color: white;
-  font-size: 18px;
-  font-size: 1.125rem;
-}
-@media only screen and (min-width: 1170px) {
-  header {
-    height: 300px;
-    line-height: 300px;
-  }
-  header h1 {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
 }
 
 #cd-timeline {
@@ -245,7 +218,7 @@ header h1 {
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 1rem;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
@@ -285,7 +258,7 @@ header h1 {
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 14px;
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (min-width: 1170px) {

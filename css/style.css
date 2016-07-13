@@ -1,4 +1,47 @@
 /* Mixins */
+/* Side Nav Logic */
+nav.top-nav {
+  background-color: white;
+  height: 64px;
+  box-shadow: none; }
+
+.side-nav {
+  width: 240px; }
+
+#links-container {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+img#iowa-img {
+  width: 90%;
+  margin-left: 5%; }
+
+a.button-collapse.top-nav.full {
+  color: black;
+  line-height: 64px; }
+
+a.button-collapse.top-nav {
+  position: absolute;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  left: 7.5%;
+  top: 0;
+  float: none;
+  margin-left: 1.5rem;
+  color: #fff;
+  font-size: 36px;
+  z-index: 2; }
+
+div.collapsible-body ul li a {
+  font-size: 1em; }
+
+header, main, footer {
+  padding-left: 240px; }
+
 body {
   font-family: 'Lato', sans-serif; }
 
@@ -12,21 +55,8 @@ p {
 .container {
   max-width: 100% !important; }
 
-/* Nav bar */
-nav {
-  background-color: initial;
-  bottom: 0;
-  box-shadow: none;
-  height: 10%;
-  position: absolute; }
-  nav div ul {
-    display: inline-block;
-    height: inherit;
-    position: relative;
-    width: 100%; }
-    nav div ul li {
-      height: inherit;
-      width: calc(100% /3); }
+.row {
+  margin: auto; }
 
 #container-iowa-girls-code {
   background-image: url("../img/iowagirlscodecampbackground.jpeg");
@@ -50,8 +80,13 @@ nav {
       transform: translateY(-50%);
       max-width: 100%; }
 
+/* About */
+#about > div > div > div > h5 {
+  color: black;
+  margin: 5%; }
+
 /* Timeline styles */
-#timeline-container {
+#timeline {
   width: 100%; }
 
 #partner-button {
@@ -73,32 +108,36 @@ a.cd-read-more {
   text-align: center;
   font-size: 1.5rem !important; }
 
-/*programs panel*/
-#programs {
+/*locations panel*/
+#locations {
   height: 100vh;
   width: 100%; }
-  #programs #dsm-cd-item > a > div > b:hover, #programs #cr-cd-item > a > div > b:hover {
+  #locations #dsm > a > div > b:hover, #locations #cr > a > div > b:hover {
     background-color: white;
     color: black;
     text-shadow: none; }
-  #programs ul {
+  #locations ul {
     height: 100%;
     margin: 0; }
-  #programs #dsm-cd-item {
+  #locations #dsm {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/iowastate.jpg"); }
-  #programs #cr-cd-item {
+    #locations #dsm a div h1 {
+      font-size: 4rem; }
+  #locations #cr {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cr.jpg"); }
-  #programs #cr-cd-item, #programs #dsm-cd-item {
+    #locations #cr a div h1 {
+      font-size: 4rem; }
+  #locations #cr, #locations #dsm {
     background-repeat: no-repeat;
     background-size: cover; }
-  #programs h1, #programs p, #programs b {
+  #locations h1, #locations p, #locations b {
     text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
     color: white; }
-  #programs .section {
+  #locations .section {
     height: inherit; }
-    #programs .section .row {
+    #locations .section .row {
       height: 50vh; }
-      #programs .section .row .col {
+      #locations .section .row .col {
         height: inherit; }
 
 .button-collapse {
@@ -108,11 +147,30 @@ a.cd-read-more {
 #parnters-row {
   margin: 5%; }
 
+div.card-image > img {
+  padding: 5%; }
+
 /* Footer - contact */
 footer {
   background-color: #ec79a4 !important; }
 
 footer.page-footer {
   margin: 0; }
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  a.button-collapse.top-nav {
+    left: 5%; } }
+@media only screen and (max-width: 992px) {
+  header, main, footer {
+    padding-left: 0; }
+
+  nav .nav-wrapper {
+    text-align: center; }
+
+  nav .nav-wrapper a.page-title {
+    color: black;
+    font-size: 24px;
+    line-height: 64px; } }
 
 /*# sourceMappingURL=style.css.map */

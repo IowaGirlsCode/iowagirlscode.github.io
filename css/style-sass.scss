@@ -4,6 +4,9 @@ $theme-purple: rgb(193, 91, 218);
 $theme-pink-opacite: rgba(236, 121, 164, .7);
 $theme-orange-opacite: rgba(255, 156, 101, .7);
 
+$side-nav-width: 240px;
+$mobile-top-nav-line-height: 64px;
+
 /* Mixins */
 @mixin vertical-align($position: relative) {
   position: $position;
@@ -26,6 +29,63 @@ $theme-orange-opacite: rgba(255, 156, 101, .7);
   font-family: 'Lato', sans-serif;
  }
 
+
+/* Side Nav Logic */
+
+nav.top-nav {
+    background-color: white;
+    height: $mobile-top-nav-line-height;
+    box-shadow: none;
+}
+
+.side-nav {
+  width: $side-nav-width;
+}
+
+#links-container {
+  @include vertical-align();
+}
+
+img#iowa-img {
+  width: 90%;
+  margin-left: 5%;
+}
+
+a.button-collapse.top-nav.full {
+    color: black;
+    line-height: $mobile-top-nav-line-height;
+}
+
+a.button-collapse.top-nav {
+    position: absolute;
+    text-align: center;
+    height: 48px;
+    width: 48px;
+    left: 7.5%;
+    top: 0;
+    float: none;
+    margin-left: 1.5rem;
+    color: #fff;
+    font-size: 36px;
+    z-index: 2;
+}
+
+div.collapsible-body {
+  ul {
+    li {
+      a {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+
+header, main, footer {
+    padding-left: $side-nav-width;
+}
+
+
 body {
   @include sans-serif-font();
 }
@@ -44,28 +104,8 @@ p {
   max-width: 100% !important;
 }
 
-/* Nav bar */
-
-nav {
-  background-color: initial;
-  bottom: 0;
-  box-shadow: none;
-  height: 10%;
-  position: absolute;
-
-  div {
-    ul {
-        display: inline-block;
-        height: inherit;
-        position: relative;
-        width: 100%;
-
-        li {
-          height: inherit;
-          width: calc(100% /3);
-        }
-    }
-  }
+.row {
+  margin: auto;
 }
 
 #container-iowa-girls-code {
@@ -92,12 +132,18 @@ nav {
   }
 }
 
-/* Timeline styles */
-
-#timeline-container {
-  width: 100%;
+/* About */
+#about > div > div > div > h5 {
+  color: black;
+  margin: 5%;
 }
 
+
+/* Timeline styles */
+
+#timeline{
+  width: 100%;
+}
 
 #partner-button {
   margin-top: 5%;
@@ -124,13 +170,13 @@ a.cd-read-more {
     font-size: 1.5rem !important;
 }
 
-/*programs panel*/
+/*locations panel*/
 
-#programs{
+#locations { 
   height: 100vh;
   width: 100%;
 
-  #dsm-cd-item > a > div > b:hover , #cr-cd-item > a > div > b:hover {
+  #dsm > a > div > b:hover , #cr > a > div > b:hover {
     background-color: white;
     color: black;
     text-shadow: none;
@@ -141,15 +187,32 @@ a.cd-read-more {
     margin: 0;
   }
   
-  #dsm-cd-item {
+  #dsm {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/iowastate.jpg");
+
+    a {
+      div {
+          h1 {
+            font-size: 4rem;
+          }
+      }
+    }
   }
 
-  #cr-cd-item {
+  #cr {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/cr.jpg");
+  
+    a {
+
+      div {
+          h1 {
+            font-size: 4rem;
+          }
+      }
+    }
   }
 
-  #cr-cd-item, #dsm-cd-item {
+  #cr, #dsm {
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -184,6 +247,10 @@ a.cd-read-more {
   margin: 5%;
 }
 
+div.card-image > img {
+  padding: 5%;
+}
+
 /* Footer - contact */
 footer {
   background-color: $theme-pink !important;
@@ -192,3 +259,30 @@ footer {
 footer.page-footer {
   margin: 0;
 }
+
+
+ /* Mobile styles */
+
+@media only screen and (max-width: 600px) {
+  a.button-collapse.top-nav {
+      left: 5%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  
+  header, main, footer {
+    padding-left: 0;
+  }
+
+  nav .nav-wrapper {
+      text-align: center;
+  }
+
+  nav .nav-wrapper a.page-title {
+    color: black;
+    font-size: 24px;
+    line-height: $mobile-top-nav-line-height;
+  }
+}
+
