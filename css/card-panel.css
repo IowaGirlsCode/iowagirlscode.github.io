@@ -177,7 +177,7 @@ Main content
 @media only screen and (min-width: 1100px) {
   .cd-item {
     float: left;
-    height: calc(100% / 2);
+    height: 100%;
     -webkit-transition: -webkit-transform 0.5s 0.4s;
     -moz-transition: -moz-transform 0.5s 0.4s;
     transition: transform 0.5s 0.4s;

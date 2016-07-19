@@ -4,7 +4,7 @@ $theme-purple: rgb(193, 91, 218);
 $theme-pink-opacite: rgba(236, 121, 164, .7);
 $theme-orange-opacite: rgba(255, 156, 101, .7);
 
-$side-nav-width: 240px;
+$side-nav-width: 10%;
 $mobile-top-nav-line-height: 64px;
 
 /* Mixins */
@@ -104,9 +104,6 @@ p {
   max-width: 100% !important;
 }
 
-.row {
-  margin: auto;
-}
 
 #container-iowa-girls-code {
   background-image: url("../img/iowagirlscodecampbackground.jpeg");
