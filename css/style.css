@@ -107,15 +107,15 @@ a.cd-read-more {
 
 /*locations panel*/
 #locations {
-  height: 100vh;
   width: 100%; }
   #locations #dsm > a > div > b:hover, #locations #cr > a > div > b:hover {
     background-color: white;
     color: black;
     text-shadow: none; }
   #locations ul {
-    height: 100%;
     margin: 0; }
+    #locations ul li {
+      height: 100vh; }
   #locations #dsm {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/iowastate.jpg"); }
     #locations #dsm a div h1 {
@@ -168,6 +168,9 @@ footer.page-footer {
   nav .nav-wrapper a.page-title {
     color: black;
     font-size: 24px;
-    line-height: 64px; } }
+    line-height: 64px; }
+
+  .side-nav {
+    width: calc(100% / 3); } }
 
 /*# sourceMappingURL=style.css.map */

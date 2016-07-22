@@ -171,7 +171,6 @@ a.cd-read-more {
 /*locations panel*/
 
 #locations { 
-  height: 100vh;
   width: 100%;
 
   #dsm > a > div > b:hover , #cr > a > div > b:hover {
@@ -181,8 +180,11 @@ a.cd-read-more {
   }
 
   ul {
-    height: 100%;
     margin: 0;
+
+    li {
+      height: 100vh;
+    }
   }
   
   #dsm {
@@ -281,6 +283,10 @@ footer.page-footer {
     color: black;
     font-size: 24px;
     line-height: $mobile-top-nav-line-height;
+  }
+
+  .side-nav {
+    width: calc(100% / 3);
   }
 }
 
