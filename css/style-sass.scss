@@ -17,22 +17,11 @@ $theme-orange-opacite: rgba(255, 156, 101, .7);
   text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
-@mixin serif-font() {
-  font-family: 'Medula One', cursive;
- }
-
-
-@mixin sans-serif-font() {
-  font-family: 'Lato', sans-serif;
- }
-
-
 body {
-  @include sans-serif-font();
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2 {
-  @include serif-font();
   color: black;
 }
 
@@ -130,27 +119,11 @@ a.cd-read-more {
   
   #dsm {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/iowastate.jpg");
-
-    a {
-      div {
-          h1 {
-            font-size: 4rem;
-          }
-      }
-    }
   }
 
   #cr {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/cr.jpg");
-  
-    a {
 
-      div {
-          h1 {
-            font-size: 4rem;
-          }
-      }
-    }
   }
 
   #cr, #dsm {
@@ -188,8 +161,16 @@ a.cd-read-more {
   margin: 5%;
 }
 
+.card {
+  height: 200px;
+}
+
 div.card-image > img {
   padding: 5%;
+}
+
+#partners > div > div.col.s12 {
+  text-align: center;
 }
 
 /* Footer - contact */

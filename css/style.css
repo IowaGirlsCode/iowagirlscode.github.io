@@ -1,9 +1,8 @@
 /* Mixins */
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 h1, h2 {
-  font-family: 'Medula One', cursive;
   color: black; }
 
 p {
@@ -75,12 +74,8 @@ a.cd-read-more {
       height: 100vh; }
   #locations #dsm {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/iowastate.jpg"); }
-    #locations #dsm a div h1 {
-      font-size: 4rem; }
   #locations #cr {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cr.jpg"); }
-    #locations #cr a div h1 {
-      font-size: 4rem; }
   #locations #cr, #locations #dsm {
     background-repeat: no-repeat;
     background-size: cover; }
@@ -101,8 +96,14 @@ a.cd-read-more {
 #parnters-row {
   margin: 5%; }
 
+.card {
+  height: 200px; }
+
 div.card-image > img {
   padding: 5%; }
+
+#partners > div > div.col.s12 {
+  text-align: center; }
 
 /* Footer - contact */
 footer {
