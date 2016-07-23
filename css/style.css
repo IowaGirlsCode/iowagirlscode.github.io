@@ -172,5 +172,9 @@ footer.page-footer {
 
   .side-nav {
     width: calc(100% / 3); } }
+/* Mobile, turned landscape */
+@media (max-height: 499px) {
+  #igc-logo {
+    width: 50%; } }
 
 /*# sourceMappingURL=style.css.map */

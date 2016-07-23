@@ -290,3 +290,10 @@ footer.page-footer {
   }
 }
 
+/* Mobile, turned landscape */
+@media (max-height:499px){
+  #igc-logo {
+    width: 50%;
+  }
+}
+
