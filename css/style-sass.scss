@@ -4,9 +4,6 @@ $theme-purple: rgb(193, 91, 218);
 $theme-pink-opacite: rgba(236, 121, 164, .7);
 $theme-orange-opacite: rgba(255, 156, 101, .7);
 
-$side-nav-width: 10%;
-$mobile-top-nav-line-height: 64px;
-
 /* Mixins */
 @mixin vertical-align($position: relative) {
   position: $position;
@@ -28,62 +25,6 @@ $mobile-top-nav-line-height: 64px;
 @mixin sans-serif-font() {
   font-family: 'Lato', sans-serif;
  }
-
-
-/* Side Nav Logic */
-
-nav.top-nav {
-    background-color: white;
-    height: $mobile-top-nav-line-height;
-    box-shadow: none;
-}
-
-.side-nav {
-  width: $side-nav-width;
-}
-
-#links-container {
-  @include vertical-align();
-}
-
-img#iowa-img {
-  width: 90%;
-  margin-left: 5%;
-}
-
-a.button-collapse.top-nav.full {
-    color: black;
-    line-height: $mobile-top-nav-line-height;
-}
-
-a.button-collapse.top-nav {
-    position: absolute;
-    text-align: center;
-    height: 48px;
-    width: 48px;
-    left: 7.5%;
-    top: 0;
-    float: none;
-    margin-left: 1.5rem;
-    color: #fff;
-    font-size: 36px;
-    z-index: 2;
-}
-
-div.collapsible-body {
-  ul {
-    li {
-      a {
-        font-size: 1em;
-      }
-    }
-  }
-}
-
-
-header, main, footer {
-    padding-left: $side-nav-width;
-}
 
 
 body {
@@ -264,31 +205,9 @@ footer.page-footer {
  /* Mobile styles */
 
 @media only screen and (max-width: 600px) {
-  a.button-collapse.top-nav {
-      left: 5%;
-  }
+
 }
 
-@media only screen and (max-width: 992px) {
-  
-  header, main, footer {
-    padding-left: 0;
-  }
-
-  nav .nav-wrapper {
-      text-align: center;
-  }
-
-  nav .nav-wrapper a.page-title {
-    color: black;
-    font-size: 24px;
-    line-height: $mobile-top-nav-line-height;
-  }
-
-  .side-nav {
-    width: calc(100% / 3);
-  }
-}
 
 /* Mobile, turned landscape */
 @media (max-height:499px){

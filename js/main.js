@@ -8,19 +8,6 @@ jQuery(document).ready(function($){
 		interval: 3000
 	});
 
-	$(".dropdown-button").dropdown();
-
-	// experiment
-
-	 // Initialize collapse button
-  $(".button-collapse").sideNav();
-  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-  $('.collapsible').collapsible();
-
-	//experiment
-
-
-
 	//hide timeline blocks which are outside the viewport
 	hideBlocks(timelineBlocks, offset);
 
