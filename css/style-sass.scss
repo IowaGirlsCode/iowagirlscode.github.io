@@ -21,7 +21,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
   color: black;
 }
 
@@ -34,11 +34,14 @@ p {
   max-width: 100% !important;
 }
 
+#igc-logo {
+  height: 50vh;
+}
 
 #container-iowa-girls-code {
   background-image: url("../img/iowagirlscodecampbackground.jpeg");
   background-size: cover;
-  height : 100vh;
+  height : 75vh;
   margin: 0;
   max-width: 100%;
   width: 100%;
@@ -157,21 +160,14 @@ a.cd-read-more {
 
 /* Partners */
 
-#parnters-row {
-  margin: 5%;
+#partners {
+   width: 80%;
 }
 
-.card {
-  height: 200px;
-}
-
-div.card-image > img {
-  padding: 5%;
-}
-
-#partners > div > div.col.s12 {
-  text-align: center;
-}
+.partner {
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+} 
 
 /* Footer - contact */
 footer {
@@ -186,7 +182,10 @@ footer.page-footer {
  /* Mobile styles */
 
 @media only screen and (max-width: 600px) {
-
+  #cr, #dsm {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
 }
 
 
