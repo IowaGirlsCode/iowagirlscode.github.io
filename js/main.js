@@ -10,7 +10,8 @@ jQuery(document).ready(function($){
 
 	$(".dropdown-button").dropdown();
 
-	// experiment
+
+
 
 	 // Initialize collapse button
   $(".button-collapse").sideNav();
@@ -18,6 +19,8 @@ jQuery(document).ready(function($){
   $('.collapsible').collapsible();
 
 	//experiment
+
+
 
 
 
