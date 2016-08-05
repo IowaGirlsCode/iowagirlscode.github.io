@@ -42,6 +42,10 @@ p {
   color: black;
   margin: 5%; }
 
+#press {
+  font-size: 1.5rem;
+  height: auto; }
+
 /* Timeline styles */
 #timeline {
   width: 100%; }
