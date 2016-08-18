@@ -189,17 +189,17 @@ Main content
     font-size: 1.6rem;
   }
   .cd-item h2, .cd-item p {
-    -webkit-transform: translateY(30px);
+/*    -webkit-transform: translateY(30px);
     -moz-transform: translateY(30px);
     -ms-transform: translateY(30px);
     -o-transform: translateY(30px);
     transform: translateY(30px);
     -webkit-transition: -webkit-transform 0.3s 0.1s;
     -moz-transition: -moz-transform 0.3s 0.1s;
-    transition: transform 0.3s 0.1s;
+    transition: transform 0.3s 0.1s;*/
   }
   .cd-item b {
-    opacity: 0;
+/*    opacity: 0;
     -webkit-transform: translateY(20px);
     -moz-transform: translateY(20px);
     -ms-transform: translateY(20px);
@@ -207,20 +207,20 @@ Main content
     transform: translateY(20px);
     -webkit-transition: opacity 0.3s 0s, -webkit-transform 0.3s 0s;
     -moz-transition: opacity 0.3s 0s, -moz-transform 0.3s 0s;
-    transition: opacity 0.3s 0s, transform 0.3s 0s;
+    transition: opacity 0.3s 0s, transform 0.3s 0s;*/
   }
   .no-touch .cd-item a:hover h2, .no-touch .cd-item a:hover p {
-    -webkit-transform: translateY(0);
+/*    -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0);
     -webkit-transition: -webkit-transform 0.3s 0s;
     -moz-transition: -moz-transform 0.3s 0s;
-    transition: transform 0.3s 0s;
+    transition: transform 0.3s 0s;*/
   }
   .no-touch .cd-item a:hover b {
-    opacity: 1;
+/*    opacity: 1;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -228,6 +228,6 @@ Main content
     transform: translateY(0);
     -webkit-transition: opacity 0.3s 0.1s, -webkit-transform 0.3s 0.1s;
     -moz-transition: opacity 0.3s 0.1s, -moz-transform 0.3s 0.1s;
-    transition: opacity 0.3s 0.1s, transform 0.3s 0.1s;
+    transition: opacity 0.3s 0.1s, transform 0.3s 0.1s;*/
   }
   
