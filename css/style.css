@@ -55,6 +55,9 @@ p {
   margin-bottom: 5%;
   background-color: #ec79a4; }
 
+.cd-timeline-content {
+  margin-bottom: 10% !important; }
+
 .cd-timeline-img.code, #programs-button {
   background: #ec79a4; }
 
@@ -81,7 +84,7 @@ a.cd-read-more {
     #locations ul li {
       height: 100vh; }
   #locations #dsm {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/iowastate.jpg"); }
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/theforge-background.png"); }
   #locations #cr {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cr.jpg"); }
   #locations #cr, #locations #dsm {

@@ -88,6 +88,10 @@ p {
   background-color: $theme-pink;
 }
 
+.cd-timeline-content {
+  margin-bottom: 10% !important;
+}
+
 
 .cd-timeline-img.code, #programs-button{
   background: $theme-pink;
@@ -128,7 +132,7 @@ a.cd-read-more {
   }
   
   #dsm {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/iowastate.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/theforge-background.png");
   }
 
   #cr {
